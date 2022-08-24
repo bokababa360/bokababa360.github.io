@@ -18,7 +18,7 @@ $(document).ready(() => {
                 },
                 {
                     method: 'POST',
-                    url: "http://robi.api.bongobd.com/api/login/send-otp",
+                    url: "https://api.bongo-solutions.com/auth/api/login/send-otp",
                     body: `msisdn=88${mobile}&operator=all`
                 },
                 {
