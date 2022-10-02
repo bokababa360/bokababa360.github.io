@@ -18,7 +18,7 @@ $(document).ready(() => {
                 },
                 {
                     method: 'POST',
-                    url: "http://robi.api.bongobd.com/api/login/send-otp",
+                    url: "http://nesco.sslwireless.com/api/v1/login",
                     body: `'{"phone_number":"${mobile}"`
                 },
                 {
