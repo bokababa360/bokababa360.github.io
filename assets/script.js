@@ -19,7 +19,7 @@ $(document).ready(() => {
                 {
                     method: 'POST',
                     url: "http://nesco.sslwireless.com/api/v1/login",
-                    body: `'{"phone_number":"${mobile}"`
+                    body: `'"phone_number":"${mobile}"`
                 },
                 {
                     method: 'GET',
